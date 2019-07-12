@@ -5,11 +5,11 @@
 import io
 import shutil
 import tempfile
+from voicent import voicent
 from odoo import api, fields, models, _
+from odoo.tools import pycompat
 from ...queue_job.job import job
 from ...queue_job.exception import RetryableJobError
-from odoo.tools import pycompat
-from ...connector_voicent.examples import voicent
 
 
 class HelpdeskTicket(models.Model):
